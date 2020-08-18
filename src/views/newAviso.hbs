@@ -1,0 +1,52 @@
+<div class="jumbotron">
+    <img src="/img/favicon.png" class="rounded mx-auto d-block img-thumbnail" >
+	<br>
+	<h4 class="display-5 text-center">PUBLICAR AVISO</h4>
+</div>
+
+<form method="POST">
+   <div class="form-group">
+		<div class="container">
+
+			<div class="card">
+				<div class="card-header text-center">ESCRIBIR NUEVO AVISO</div>
+				<div class="card-body">
+
+					
+						<div class="col">
+							<label>TÍTULO:</label>
+							<input  type="text" onkeyup="mayus(this);" name="titulo" id="titulo"  class="form-control" placeholder="Título del aviso" required>
+						</div>
+                        <br>    
+						<div class="col">
+							<div class="form-group">
+                                <label for="exampleFormControlTextarea4">DESCRIPCIÓN:</label>
+                                <textarea class="form-control" name="descripcion" id="descripcion" rows="9" placeholder="Descripción del aviso" required></textarea>
+                            </div>
+						</div>
+						
+						<div class="form-group">
+							 <p class="text-center">
+				        		<button class="btn btn-primary btn-lg">PUBLICAR</button>
+			       			 </p>
+						</div>
+
+					
+
+
+				</div>	
+				
+			</div>
+		</div>
+	</div>
+
+</form>
+
+
+<script>
+	document.getElementById('titulo').focus();
+
+    function mayus(e) {
+        e.value = e.value.toUpperCase();
+    }
+</script>

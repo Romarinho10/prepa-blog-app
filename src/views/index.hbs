@@ -1,0 +1,39 @@
+<div class="jumbotron">
+    <img src="/img/favicon.png" class="rounded mx-auto d-block img-thumbnail" >
+	<br>
+	<h4 class="display-5 text-center">CENTRO EDUCATIVO</h4>
+	<h4 class="display-5 text-center">"ANTONIO BETANCOURT PÉREZ"</h4>
+	<p class="lead text-center">Escuela Preparatoria "Felipe Escalante Ruz"</p>
+    <p class="text-center text-dark">AVISOS GENERALES DEL CURSO 2020-2021</p>
+</div>
+
+
+
+
+{{#each avisos}}
+
+	<form method="GET">
+   		<div class="form-group">
+			<div class="container">
+
+            	<div class="card">
+				<div class="card-header text-center">
+					<h3>{{titulo}}</h3>
+				</div>
+				<div class="card-body">
+
+					<div class="container">
+                        <h5>{{descripcion}}</h5>
+                    </div>
+
+				</div>	
+				
+				</div>
+				<br>
+			</div>
+		</div>
+
+	</form>
+
+{{/each}}
+
